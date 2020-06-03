@@ -25,4 +25,12 @@ CREATE TABLE <nomeDaTabela> (<campo1 tipo>)
 * enum - lista (máximo de 65.535 itens)
 * date - datas
 
+DESCRIBE - mostra a composição da tabela
+
+DROP TABLE - destrói a tabela
+
+ALTER TABLE - adiciona um novo campo na tabela
+
+
+
 
