@@ -12,15 +12,17 @@ CREATE TABLE <nomeDaTabela> (<campo1 tipo>)
 ```
 **Tipos de dados**
 
-tinyint - -128 a 127 (signed)
-integer / int
-bigint
-bool / boolean / bit
-float (m,d)
-char(m) - caso o espaço não seja preenchido com o que foi digitado o sistema preenche os dados
-varchar(m) - semelhante ao char, mas sem o preenchimento (versão mais econômica do anterior)
-text/blob
-tinytext / tinyblob - string
-mediumtext / mediumblob - string
-enum - lista (máximo de 65.535 itens)
-date - datas
+* tinyint - -128 a 127 (signed)
+* integer / int
+* bigint
+* bool / boolean / bit
+* float (m,d)
+* char(m) - caso o espaço não seja preenchido com o que foi digitado o sistema preenche os dados
+* varchar(m) - semelhante ao char, mas sem o preenchimento (versão mais econômica do anterior)
+* text/blob
+* tinytext / tinyblob - string
+* mediumtext / mediumblob - string
+* enum - lista (máximo de 65.535 itens)
+* date - datas
+
+
