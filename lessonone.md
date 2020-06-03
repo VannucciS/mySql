@@ -29,7 +29,15 @@ DESCRIBE - mostra a composição da tabela
 
 DROP TABLE - destrói a tabela
 
-ALTER TABLE - adiciona um novo campo na tabela
+ALTER TABLE <nome da tabela> ADD <campo adicionar> <tipo> - adiciona um novo campo na tabela
+
+ALTER TABLE <> MODIFY<> - modifica um campo da tabela
+
+ALTER TABLE <> CHANGE <> - renomear o nome de um campo e tipo
+
+ALTER TABLE <> DROP COLUMN <> - apaga a coluna/ campo
+
+
 
 
 
