@@ -37,6 +37,8 @@ ALTER TABLE <> CHANGE <> - renomear o nome de um campo e tipo
 
 ALTER TABLE <> DROP COLUMN <> - apaga a coluna/ campo
 
+ALTER TABLE <> RENAME <> - renomeia o nome da tabela
+
 
 
 
