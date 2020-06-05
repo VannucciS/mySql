@@ -44,6 +44,9 @@ ALTER TABLE <> RENAME <> - renomeia o nome da tabela
 **Comandos DML**
 
 * inserção de dados
+
+INSERT INTO alunos (id, matricula, nome, email) VALUES (1, 123456, Jose, asdf@gmail.com);
+
 * alteração de dados
 * remoção de dados
 
