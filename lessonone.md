@@ -41,6 +41,10 @@ ALTER TABLE <> RENAME <> - renomeia o nome da tabela
 
 
 
+**Comandos DML**
 
+* inserção de dados
+* alteração de dados
+* remoção de dados
 
 
