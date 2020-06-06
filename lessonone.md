@@ -50,9 +50,10 @@ INSERT INTO alunos (id, matricula, nome, email) VALUES (1, 123456, Jose, asdf@gm
 * alteração de dados
 
 * atualização de dados
+```
 UPDATE <tabela> SET email <(o que deve ser alterado>,
   where <campo> = 'alguma coisa';
-  
+  ```
 * remoção de dados
 
 
