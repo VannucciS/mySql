@@ -56,4 +56,14 @@ UPDATE <tabela> SET email <(o que deve ser alterado>,
   ```
 * remoção de dados
 
+```
+DELETE  FROM <> WHERE <> = <>;
+
+```
+
+```
+TRUNKATE
+ALTER TABLE 
+```
+
 
