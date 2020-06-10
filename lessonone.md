@@ -68,3 +68,6 @@ ALTER TABLE
 **Consulta de dados - SELECT**
 * select concat  ( campo 1 , "-", campo3) from planilha;
 
+código para fazer backup
+
+mysqldump -u root -h localhost -p <nome do dba>  > c:\backup\backup_nome.sql
