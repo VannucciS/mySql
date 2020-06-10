@@ -65,5 +65,6 @@ DELETE  FROM <> WHERE <> = <>;
 TRUNKATE
 ALTER TABLE 
 ```
-
+**Consulta de dados - SELECT**
+* select concat  ( campo 1 , "-", campo3) from planilha;
 
