@@ -71,3 +71,19 @@ ALTER TABLE
 código para fazer backup
 
 mysqldump -u root -h localhost -p <nome do dba>  > c:\backup\backup_nome.sql
+  
+  **Consultas com SELECT**
+  
+  ```
+  SELECT <one.nomedocampo, one.nomedocampo2, two.nomedocampo, two.nomedocampo2>
+  FROM tabela1 AS one
+  INNER JOIN tabela2 AS two on id.one = id.two
+  WHERE 
+  
+  
+  SELECT e.matricula, e.nome, e.data_adminissao, c.nome AS cargo, d.sigla AS sigla_departamento, d.nome AS departamento, 
+  FROM empregados e
+  INNER JOIN cargos c ON c.id = e.cargo_id
+  INNER JOIN departamentos d on d.id = e.cargo_id;
+  
+```
