@@ -68,10 +68,20 @@ ALTER TABLE
 **Consulta de dados - SELECT**
 * select concat  ( campo 1 , "-", campo3) from planilha;
 
-código para fazer backup
-
+**código para fazer backup**
+```
 mysqldump -u root -h localhost -p <nome do dba>  > c:\backup\backup_nome.sql
   
+mysqldump -u [USERNAME] -p[PASSWORD] [DATABASE-NAME] > dumpfilename.sql
+
+```
+
+**código para restaurar**
+```
+mysqldump -u root -h localhost -p area_comercial < C:\Users\Aprendiz\Downloads\backup_area_comercial.sql
+
+mysql -u [USERNAME] -p[PASSWORD] [DATABASE-NAME] < dumpfilename.sql
+```
   **Consultas com SELECT**
   
   ```
