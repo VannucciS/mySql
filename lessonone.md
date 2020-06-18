@@ -82,7 +82,17 @@ mysqldump -u root -h localhost -p area_comercial < C:\Users\Aprendiz\Downloads\b
 
 mysql -u [USERNAME] -p[PASSWORD] [DATABASE-NAME] < dumpfilename.sql
 ```
-  **Consultas com SELECT**
+**OU**
+
+Dentro do prompt do SQL
+
+```
+USE area_comercial;
+
+SOURCE C:\Users\Aprendiz\Downloads\backup_area_comercial.sql
+
+```
+**Consultas com SELECT**
   
   ```
   SELECT <one.nomedocampo, one.nomedocampo2, two.nomedocampo, two.nomedocampo2>
