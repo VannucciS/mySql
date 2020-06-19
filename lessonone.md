@@ -107,3 +107,17 @@ SOURCE C:\Users\Aprendiz\Downloads\backup_area_comercial.sql
   INNER JOIN departamentos d on d.id = e.cargo_id;
   
 ```
+**TRIGGERS**
+
+```
+  CREATE TRIGGER calcular_preco_produtos BEFORE INSERT ON produtos FOR EACH ROW SET NEW.preco = NEW.CUSTO + (NEW.custo * 0.5);
+  
+  SHOW TRIGGERS; -  mostra as triggers
+  
+  CREATE TRIGGER remover_produtos_da_familia_excluida BEFORE DELETE ON familias_produtos FOR EACH ROW DELETE FROM produtos  where fk_codigo_familia = OLD.codigo;
+  
+  DROP TRIGGER <nome da trigger>;
+  
+  ```
+  
+  
