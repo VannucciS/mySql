@@ -118,6 +118,14 @@ SOURCE C:\Users\Aprendiz\Downloads\backup_area_comercial.sql
   
   DROP TRIGGER <nome da trigger>;
   
+  
+  
   ```
+  ```
+  DELIMITER //
+  CREATE TRIGGER
+  BEGIN 
   
-  
+  END //
+  DELIMITER;
+  ```
