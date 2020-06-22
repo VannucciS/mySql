@@ -166,10 +166,17 @@ CALL retorna_se_e_caixa$$
 **STORED PROCEDURES (LOOP)**
 
 ```
+DELIMITER $$
 CREATE PROCEDURE realiza_loop()
 BEGIN
 DECLARE vInicial INT DEFAULT 1;
 DECLARE vFinal INT DEFAULT 10;
 WHILE vInicial ,+ vFinal DO
 SELECT vInicial AS contador;
-SET vInicial = vInicial + 10
+SET vInicial = vInicial + 1;
+END WHILE;
+END $$ DELIMITER;
+
+
+CALL realiza_loop;
+```
