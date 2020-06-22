@@ -129,3 +129,47 @@ SOURCE C:\Users\Aprendiz\Downloads\backup_area_comercial.sql
   END //
   DELIMITER;
   ```
+**STORED PROCEDURES**
+
+
+```
+DELIMITER $$
+CREATE PROCEDURE nome_procedure (parametros)
+BEGIN
+DECLARE <variaveis>;
+...
+<instruções>
+...
+END$$
+DELIMITER;
+
+```
+**STORED PROCEDURES**
+
+```
+CREATE PROCEDURE retorna_se_e_caixa()
+BEGIN
+DECLARE vCodigo INT DEFAULT 104;
+DECLARE vNomeBanco VARCHAR (44);
+SELECT nome INTO vNomeBanco FROM bancos WHERE codigo = vCodigo;
+IF vNomeBanco = 'Caixa Economica' THEN
+SELECT 'É banco caixa' AS resultado;
+ELSE
+SLEECT 'Não é banco caixa' AS resultado;
+END IF;
+END $$ DELIMITER;
+
+
+CALL retorna_se_e_caixa$$
+```
+
+**STORED PROCEDURES (LOOP)**
+
+```
+CREATE PROCEDURE realiza_loop()
+BEGIN
+DECLARE vInicial INT DEFAULT 1;
+DECLARE vFinal INT DEFAULT 10;
+WHILE vInicial ,+ vFinal DO
+SELECT vInicial AS contador;
+SET vInicial = vInicial + 10
