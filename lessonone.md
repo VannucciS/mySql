@@ -180,3 +180,24 @@ END $$ DELIMITER;
 
 CALL realiza_loop;
 ```
+**FUNCTIONS**
+
+```
+DELIMITER$$
+CREATE FUNCTION nome funcao (parametros)
+reteruns <datatype>
+BEGIN
+DECLARE <variaveis>;
+...
+<instruções>
+...
+RETURN <valro_retornado>
+...
+END $$
+
+```
+
+**CRIAÇÃO DE FUNÇÕES NO SQL**
+```
+SET GLOBAL log_bin_trust_function_creators = 1;
+```
